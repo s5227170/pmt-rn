@@ -100,7 +100,7 @@ const Section = (props) => {
           setContent(text), setDataContent(text);
         }}
         multiline
-        maxLength={200}
+        maxLength={350}
       />
       <View style={styles.imgManagementContainer}>
         <ImageApplier

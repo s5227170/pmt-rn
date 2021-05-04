@@ -115,6 +115,7 @@ export const screenOptions = navData => {
 const styles = StyleSheet.create({
     screen: {
         flex: 1,
+        backgroundColor: '#f2f2f2',
     }
 });
 
