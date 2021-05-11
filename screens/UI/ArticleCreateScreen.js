@@ -154,19 +154,19 @@ const ArticleCreateScreen = (props) => {
             header and footer are in the component/UI folder */}
       {!send && user? (
         <ScrollView>
-          <Text style={{ fontSize: 24 }}>Article title:</Text>
+          <Text style={{ fontSize: 24 }}>Main information:</Text>
+          <Divider />
           <Input
             placeholder="Enter a title"
             style={{}}
             onChangeText={(text) => setTitle(text)}
           />
-          <Text style={{ fontSize: 24 }}>Brief description:</Text>
           <Input
             placeholder="Enter description"
             style={{}}
             onChangeText={(text) => setBriefDesc(text)}
           />
-          <Text style={{ fontSize: 24, borderBottomWidth: 2, width: "85%" }}>
+          <Text style={{ fontSize: 18, borderBottomWidth: 2, width: "85%" }}>
             Topic:
           </Text>
           <Picker
@@ -182,7 +182,7 @@ const ArticleCreateScreen = (props) => {
             />
             <Picker.Item label="Endocrine state" value="Endocrine state" />
           </Picker>
-          <Text style={{ fontSize: 24, borderBottomWidth: 2, width: "85%" }}>
+          <Text style={{ fontSize: 18, borderBottomWidth: 2, width: "85%", }}>
             Level:
           </Text>
           <Picker

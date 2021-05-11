@@ -9,6 +9,7 @@ import {
   ScrollView,
   ActivityIndicator,
   TouchableOpacity,
+  TouchableHighlight
 } from "react-native";
 import { togglePageName } from "../../store/actions/articlesActions";
 import HeaderButton from "../../components/UI/HeaderButton";
@@ -17,6 +18,8 @@ import { Ionicons } from "@expo/vector-icons";
 import { Divider } from "react-native-elements";
 import { SocialIcon } from "react-native-elements";
 import Icon from "react-native-vector-icons/FontAwesome";
+import { Alert } from "react-native";
+
 
 const ProfileScreen = (props) => {
   const dispatch = useDispatch();
@@ -90,6 +93,12 @@ const ProfileScreen = (props) => {
           <View style={{ flexDirection: "row", justifyContent: 'space-between' }}>
             <Text>Email:</Text>
             <Text>{user.email}</Text>
+          </View>
+          <View style={{ flexDirection: "row", justifyContent: 'space-between' }}>
+            <Text>Status: </Text>
+            <TouchableOpacity onPress={() => Alert.alert("Account deactivation", "Are you sure you want to deactivate your account?")}>
+              <Text style={{ fontSize: 18, fontStyle: "italic", textDecorationLine: 'underline' }}>Deactivate</Text>
+            </TouchableOpacity>
           </View>
         </View>
         <ScrollView style={styles.secondary}>

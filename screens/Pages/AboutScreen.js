@@ -33,26 +33,56 @@ const AboutScreen = (props) => {
             PMT assignment application prototype
           </Text>
           <Divider style={{ height: 1 }} />
-          <Text style={styles.content}>
-            {"     "} This application prototype was planned, designed and
-            developped by the PMT group of Bournemouth University for an
-            assignment. The idea behind the application is to provide an
-            environment where different professional fitness enthusiasts can
-            provide knowledge about health and fitness to individuals trying to
-            better their lifestyle.
-            {"\n     "} The developers had in mind the different complications
-            and difficulties when it comes to learning new things and keeping
-            oneself motivated while continuing working towards their goals. To
-            tackle this, the group designed data models accordingly by
-            implementing attributes that help users orient themselves to the
-            best possible solution for their goals. Properties like "Levels",
-            "Types" and "Favorites" are just some examples, of course with time
-            more and more filtration and SEO techniques will be implemented but
-            since this is just a prototype it has restricted functionality.
-            {"\n     "} {/* Continue with the context */}This page will
-            eventually have contact deatails, FAQ section and other informative
-            data.
-          </Text>
+          <View
+            style={{
+              margin: 10,
+              flexDirection: "row",
+              justifyContent: "space-evenly",
+            }}
+          >
+            <Text>Email:</Text>
+            <Text>FITLINK4YOU@FL.COM</Text>
+          </View>
+          <View
+            style={{
+              margin: 10,
+              flexDirection: "row",
+              justifyContent: "space-evenly",
+            }}
+          >
+            <Text>Adress:</Text>
+            <Text>14 Priory Road, Bournemouth, UK</Text>
+          </View>
+          <View
+            style={{
+              margin: 10,
+              flexDirection: "row",
+              justifyContent: "space-evenly",
+            }}
+          >
+            <Text>Postcode:</Text>
+            <Text>BH2 5DN</Text>
+          </View>
+          <View
+            style={{
+              margin: 10,
+              flexDirection: "row",
+              justifyContent: "space-evenly",
+            }}
+          >
+            <Text>Mobile phone:</Text>
+            <Text>07981 652017</Text>
+          </View>
+          <View
+            style={{
+              margin: 10,
+              flexDirection: "row",
+              justifyContent: "space-evenly",
+            }}
+          >
+            <Text>Telephone:</Text>
+            <Text>62884</Text>
+          </View>
         </View>
       </ScrollView>
     </View>
@@ -111,7 +141,6 @@ const styles = StyleSheet.create({
   },
   contentContainer: {
     width: "100%",
-    borderWidth: 2,
     padding: 20,
   },
   introduction: {
